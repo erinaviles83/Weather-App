@@ -1,53 +1,56 @@
-h1, p, h2, h3 {
-    text-align: center;  
-    
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+p,
+h2,
+h3 {
+  text-align: center;
 }
 h1 {
-    font-size: 75px;
-    margin: 25px 50px 10px 50px; 
+  font-size: 60px;
+  margin: 25px 50px 10px 50px;
 }
- p {
-     font-size: 30px;
- }
+p {
+  font-size: 30px;
+}
 h2 {
-    font-size: 60px;
+  font-size: 40px;
 }
 h3 {
-    font-size: 30px;
-    font-style: italic;
-    margin: 30px auto;
+  font-size: 30px;
+  font-style: italic;
+  margin: 30px auto;
 }
 
 button {
-    font-size: 25px;
-    border-radius: 6px;
-    background: rgb(77, 151, 242); 
-    color: white;
+  font-size: 25px;
+  border-radius: 6px;
+  color: white;
 }
-li {
+
+ul {
+    text-align: center;
     list-style: none;
-    text-align: left;
+
 }
 
 .container {
-    border: 5px solid rgb(247, 144, 9);
-    padding: 20px 10px;
-   margin: 5px 15px; 
-   max-width: 700px;
-   border-radius: 15px;
-   background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  border: 5px solid rgb(247, 144, 9);
+  padding: 20px 10px;
+  margin: 5px 15px;
+  max-width: 600px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
 .text-left {
-    text-align: left; 
-    font-size: 25px;
-    margin: 80px 60px 40px 60px; 
-    
+  text-align: left;
+  font-size: 25px;
+  margin: 80px 60px 40px 60px;
 }
-.weekforecast {
-    font-size: 15px;
-}
-.wrap {
-    float: right; 
-    margin-left: -40px;
 
+.wrap {
+  float: right;
+  margin-left: -40px;
 }
