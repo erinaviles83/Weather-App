@@ -22,6 +22,7 @@ function formatDate(timestamp) {
 }
 
 function displayTemperature(response) {
+  console.log(response.data); 
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
   let descriptionElement = document.querySelector("#description");
@@ -57,7 +58,7 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-search("New York");
+search("Tampa");
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);

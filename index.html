@@ -16,23 +16,52 @@
   </head>
   <body>
     <div class="container">
-      <form>
-        <input type="search" id="new-city" placeholder="Change City" />
-        <input type="submit" value="Search 🔍 " />
-        <h1 id="city">Tampa</h1>
-        <p id="date">Monday 9:00pm EST</p>
-        <h2 id="temperature">°F</h2>
-
-        <h3 id="real-feel">Feels like 96°F</h3>
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+      <form action="" id="search-form" class="mb-4">
+        <div class="row">
+          <div class="col-4">
+            <input type="search"
+            placeholder="Change City 🔍"
+            class="form-control"
+            id="city-input"
+            autocomplete="off"/>
+            <div class="col-8">
+              <input 
+              type="submit"
+              value="search"
+              class="btn btn-primary w-100">
+            </div>
+          </div>
+          </div>
+          </div>
+        </div>
       </form>
-      <div class="text-left">
-        <div class="row row-cols-8">
-          <ul>
-            <li>Humidity: <span id="humidity"></span>%</li>
-            <li>UV Index: <span id="uv"></span></li>
-            <li>Sunrise: <span id="sunrise"></span>AM</li>
-            <li>Sunset: <span id="sunset"></span>PM</li>
-          </ul>
+      <div class="overview">
+        <h1 id="city"></h1>
+        <ul>
+              <li>Last updated: <span id="date"></span></li>
+              <li id="description"></li>
+            </ul>
+        
+        <div class="row">
+            <div class="col-6">
+              <div class="d-flex weather-temperature">
+                <img src="#" alt="sunny" id="icon" />
+                <div class="float-left">
+                  <strong id="temperature"> </strong
+                  ><span class="units">°F</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Feels like: <span id="realfeel"></span>°F</li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
