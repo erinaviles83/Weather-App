@@ -13,7 +13,6 @@ h1 {
   margin: 25px 25px 10px 50px;
 }
 
-
 ul {
   text-align: center;
   list-style: none;
@@ -37,7 +36,11 @@ li:first-letter {
   margin: 5px 15px;
   max-width: 600px;
   border-radius: 15px;
-  background: linear-gradient(359.3deg, rgb(196, 214, 252) 1%, rgba(187, 187, 187, 0) 70.9%);
+  background: linear-gradient(
+    359.3deg,
+    rgb(196, 214, 252) 1%,
+    rgba(187, 187, 187, 0) 70.9%
+  );
 }
 
 .weather-temperature img {
@@ -57,4 +60,18 @@ li:first-letter {
   position: relative;
   font-size: 16px;
   top: -30px;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  color: rgb(135, 125, 125); 
+}
+
+.weather-forecast-temperature {
+  font-size: 14px;
 }
